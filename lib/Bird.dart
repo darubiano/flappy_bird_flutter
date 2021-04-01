@@ -5,7 +5,7 @@ class Bird extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      width: size.width*0.22,
+      width: size.width*0.15,
       child: Image.asset('assets/bird.png',),
       //color: Colors.red,
     );

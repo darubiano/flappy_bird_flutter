@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
         if(timer>10.0){
           setState(() {
             heightUp = 0.2;
-            heighDown = 0.25;
+            heighDown = 0.2;
           });
         }
         if(timer>11.0){
@@ -54,12 +54,14 @@ class _HomePageState extends State<HomePage> {
             best = score;
           }
         }
-        if (birdyaxis > 1.2) {
+        //print(birdyaxis);
+        if ((birdyaxis > 1.2 )|| (birdyaxis < -1.2)) {
           t.cancel();
           game = false;
           time = 0;
           timer = 0.0;
           birdyaxis = 0;
+          initalHeight = 0;
           barrierxone = 1;
           barrierxtwo = 2;
           heightUp = 0.0;
