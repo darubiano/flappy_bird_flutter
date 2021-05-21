@@ -7,8 +7,9 @@ class Barrier extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Container(
-      width: 100.0,
+      width: size.width*0.25,
       height: height,
       decoration: BoxDecoration(
         color:Colors.green,
